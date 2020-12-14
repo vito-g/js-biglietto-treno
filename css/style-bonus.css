@@ -17,7 +17,7 @@
 
 }
 
-#output {
+div {
   background-color: white;
   color: black;
   text-transform: none;
@@ -25,4 +25,5 @@
   border-radius: 5px;
   box-shadow: inset 1.5px 1.5px 1.5px grey;
   line-height: 40px;
+  font-family: monospace;
 }
