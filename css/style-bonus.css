@@ -27,3 +27,8 @@ div {
   line-height: 40px;
   font-family: monospace;
 }
+
+#output {
+  background-color: yellow;
+  color: black;
+}
