@@ -5,4 +5,16 @@ var età = prompt('Adesso, inserisca la sua età');
 console.log('La sua età è di: ' + età + 'anni');
 
 var defaultCost = 0.21 * percorrenza;
-console.log('Il costo predefinito del biglietto è di: ' + defaultCost + 'euro')
+console.log('Il costo predefinito del biglietto è di: ' + defaultCost + 'euro');
+
+var discountedCost = document.getElementById('output');
+
+if ( età < 18) {
+  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8);
+} else if ( età > 65) {
+  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6);
+}
+
+// var result = parseInt('discountCost');
+//
+// console.log('Il costo del biglietto al netto dello sconto è di: ' + result + 'euro');
