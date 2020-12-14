@@ -5,14 +5,16 @@
 }
 
 .box {
-  width: 20%;
+  width: 40%;
+  height: 100vh;
   margin: auto;
   color: white;
-  background-color: black;
+  background-color: #006b66;
   padding: 40px;
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
+
 }
 
 #output {
@@ -21,4 +23,6 @@
   text-transform: none;
   margin-top: 20px;
   border-radius: 5px;
+  box-shadow: inset 1.5px 1.5px 1.5px grey;
+  line-height: 40px;
 }
