@@ -10,11 +10,9 @@ console.log('Il costo predefinito del biglietto è di: ' + defaultCost + 'euro')
 var discountedCost = document.getElementById('output');
 
 if ( età < 18) {
-  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8);
+  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8) + 'euro';
 } else if ( età > 65) {
-  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6);
+  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6) + 'euro';
+} else {
+  discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + defaultCost + 'euro';
 }
-
-// var result = parseInt('discountCost');
-//
-// console.log('Il costo del biglietto al netto dello sconto è di: ' + result + 'euro');
