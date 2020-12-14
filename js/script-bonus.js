@@ -14,17 +14,20 @@ console.log('Il costo predefinito del biglietto è di: ' + defaultCost + 'euro')
 var discountedCost = document.getElementById('output');
 
 
-if (isNaN(percorrenza) || isNaN(età)) {
-  alert('Inserisca solo valori numerici. Ripeta l\'operazione.');
-} else {
-    if ( età < 18) {
-      discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8) + 'euro';
-      console.log('Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8) + 'euro');
-    } else if ( età > 65) {
-      discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6) + 'euro';
-      console.log('Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6) + 'euro');
-    } else {
-      discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + defaultCost + 'euro';
-      console.log('Il costo del biglietto per la sua fascia d\'età è di: ' + defaultCost + 'euro');
+// if (isNaN(percorrenza) || isNaN(età))
+if (!percorrenza || !età) {
+  alert('Tutti i campi vuoti vanno riempiti e solo con valori numerici privi di spazio. Ripeta l\'operazione.');
+} else if (isNaN(percorrenza) || isNaN(età)) {
+    alert('Inserisca solo valori numerici che siano privi di spazio. Ripeta l\'operazione.');
+  } else {
+      if ( età < 18) {
+        discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8) + 'euro';
+        console.log('Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.8) + 'euro');
+      } else if ( età > 65) {
+        discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6) + 'euro';
+        console.log('Il costo del biglietto per la sua fascia d\'età è di: ' + (defaultCost * 0.6) + 'euro');
+      } else {
+        discountedCost.innerHTML = 'Il costo del biglietto per la sua fascia d\'età è di: ' + defaultCost + 'euro';
+        console.log('Il costo del biglietto per la sua fascia d\'età è di: ' + defaultCost + 'euro');
+      }
     }
-  }
