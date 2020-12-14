@@ -13,8 +13,6 @@ console.log('Il costo predefinito del biglietto è di: ' + defaultCost + 'euro')
 
 var discountedCost = document.getElementById('output');
 
-
-// if (isNaN(percorrenza) || isNaN(età))
 if (!percorrenza || !età) {
   alert('Tutti i campi vuoti vanno riempiti e solo con valori numerici privi di spazio. Ripeta l\'operazione.');
 } else if (isNaN(percorrenza) || isNaN(età)) {
